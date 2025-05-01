@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://r6tvgsq64pvc"]
+
+[ext_resource type="Script" uid="uid://bf8ci0jqw224l" path="res://EnemyBullet.gd" id="1_ymxas"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ymxas"]
+
+[node name="EnemyBullet" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_ymxas")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ymxas")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(8, 8)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.751532, 0.65109, 0.338045, 1)
